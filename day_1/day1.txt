@@ -1,0 +1,18 @@
+Day 1
+
+create table Hospital(DoctorId varchar2(10) primary key,DocName varchar2(20),Specialization varchar2(10),HOD varchar2(10),DeptNo varchar2(25),HireDate date,Sal number(10,3));
+
+create table HospitalDept(DeptNo varchar2(5) primary key,DeptName varchar2(20),Location varchar2(20));
+ 
+desc Hospital;
+desc HospitalDept;
+
+alter table Hospital ADD AdditionalQualification varchar2(20);
+alter table Hospital modify Specialization varchar(20);
+ALTER TABLE HospitalDept DROP COLUMN Location;
+alter table Hospital rename column Sal to Salary;
+drop table HospitalDept;
+select 'sagar','20' from dual;
+select Sysdate from dual;
+select 55-15+8*3/6 from dual;
+select table_name from tabs;

@@ -1,0 +1,64 @@
+Day 2
+
+create table Employee(EmpId varchar2(5),EmpName varchar2(10),Job varchar2(20),Manager varchar2(5),DeptNo varchar2(5),HireDate Date,Salary int,Comm int);
+
+insert into Employee values('E0001','Abey','Tester','E0004','D004',DATE '2012-12-15',30000,500);
+insert into Employee values('E0002','Jesto','Analyst','E0001','D002',DATE '2011-04-24',25000,650);
+insert into Employee values('E0003','Adarsh','Clerk','E0004','D004',DATE '2013-01-10',15000,500);
+insert into Employee values('E0004','Kevin','Admin','E0005','D002',DATE '2013-10-10',20000,1750);
+insert into Employee values('E0005','Bony','Manager',null,'D001',DATE '2011-04-11',50000,1000);
+insert into Employee values('E0006','Manu','Supplier','E0001','D003',DATE '2013-06-19',5000,450);
+
+create table Department(DeptNo varchar(10), DeptName varchar(10), Location varchar(10));
+
+insert into Department values('D001','DeptA','A Block');
+insert into Department values('D002','DeptB','B Block');
+insert into Department values('D003','DeptC','C Block');
+insert into Department values('D004','DeptD','D Block');
+
+
+create table Client(Cno varchar2(6),Name varchar2(20),City varchar2(15),PinCode Number(8),State varchar2(15),Baldue Number(10,2));
+
+insert into Client values('CO1','Nimmy','Cochin',680324,'Kerala',14000);
+insert into Client values('CO2','Susan','Cochin',680324,'Kerala',0);
+insert into Client values('CO3','Anjana','Salem',680345,'TamilNadu',5000);
+insert into Client values('CO4','Sneha','Pune',680223,'Maharashta',500);
+insert into Client values('CO5','Annet','Gandipuram',680321,'Karnataka',7600);
+insert into Client values('CO6','Ann','Bombay',682111,'Maharashtra',2055);
+
+insert into Employee (Empid) values ('E0001');
+
+SELECT * FROM Client WHERE ROWNUM <= 4;
+
+SELECT EmpName, HireDate, Salary FROM Employee;
+
+SELECT * FROM Employee WHERE EmpName LIKE 'A%' OR EmpName LIKE 'K%';
+
+SELECT DISTINCT City FROM Client;
+
+SELECT * FROM EMPLOYEE WHERE HireDate > '31-Dec-2012' AND Salary > 17500 and Job='Manager';
+
+SELECT * FROM Employee WHERE EmpName BETWEEN 'E' AND 'L';
+
+UPDATE Client SET City = 'Delhi' WHERE Cno='CO3';
+
+UPDATE Employee SET Comm = 600 WHERE EmpName = 'Abey';
+
+SELECT Name ||' from '|| City ||' has '|| Baldue ||' balance due.' FROM Client;
+
+SELECT Baldue AS "Due Balance" FROM Client;
+
+SELECT * FROM Client WHERE State != 'Kerala';
+
+
+
+
+
+
+
+
+
+
+
+
+
