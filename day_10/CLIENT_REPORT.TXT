@@ -1,0 +1,17 @@
+SQL> SELECT * FROM CLIENT WHERE STATE !='KERALA';
+
+                                                                                 CLIENT REPORT                                                                                 
+                                                                       **********************************                                                                      
+                                                                                                                                                                               
+CNO   NAME                 CITY                    PINCODE STATE                    BALDUE                                                                                     
+----- -------------------- -------------------- ---------- -------------------- ----------                                                                                     
+C03   ANJANA               SALEM                    680345 TAMIL NADU                 5000                                                                                     
+C04   SNEHA                PUNE                     680223 MAHARASHTRA                 500                                                                                     
+C05   ANNET                GANDHIPURAM              680321 KARNATAKA                  7600                                                                                     
+C06   ANN                  BOMBAY                   682111 MAHARASHTRA                2055                                                                                     
+
+
+
+                                                                                 END OF REPORT                                                                                 
+
+SQL> SPOOL OFF;

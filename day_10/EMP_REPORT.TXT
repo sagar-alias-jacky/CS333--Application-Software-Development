@@ -1,0 +1,19 @@
+SQL> SELECT * FROM EMPLOYEE;
+
+                                                                                EMPLOYEE REPORT                                                                                
+                                                                        ********************************                                                                       
+                                                                                                                                                                               
+EMPID EMPNAME    JOB                  MANAG DEPTN HIREDATE      SALARY       COMM                                                                                              
+----- ---------- -------------------- ----- ----- --------- ---------- ----------                                                                                              
+E0001 Abey       Tester               E0004 D004  15-DEC-12      65000        500                                                                                              
+E0002 Jesto      Analyst              E0001 D002  24-APR-11      35000        650                                                                                              
+E0003 Adarsh     Clerk                E0004 D004  10-JAN-13      35000        500                                                                                              
+E0004 Kevin      Admin                E0005 D002  10-OCT-13      35000       1750                                                                                              
+E0005 Bony       Manager                    D001  11-APR-11      65000       1000                                                                                              
+E0006 Manu       Supplier             E0001 D003  19-JUN-13      15000        450                                                                                              
+E0007 DINGAN     JOBLESS              E0003 D001  13-FEB-15    1000000        500                                                                                              
+                                                                                 END OF REPORT                                                                                 
+
+7 rows selected.
+
+SQL> SPOOL OFF;
