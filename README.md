@@ -7,5 +7,3 @@
 ![lab_cycle_page_7](lab_cycle/lab_cycle_7.jpg)
 ![lab_cycle_page_8](lab_cycle/lab_cycle_8.jpg)
 ![lab_cycle_page_9](lab_cycle/lab_cycle_9.jpg)
-
-.
